@@ -33,3 +33,38 @@
 		// store the tweet content
 		$this->tweetContent = $newTweetContent;
 }
+
+	/**
+	 * gets tweets by tweet date
+	 *
+	 * @param \PDO $pdo PDO connection object
+	 * @param \DateTime|string|null $tweetDate date and time tweet was sent to search for
+	 * @return |SplFixedArray SplFixedArray of tweets found
+	 * @throws \PDOException when mySQL related errors occur
+	 * @throws \TypeErrorwhen a variable is not the correct data type
+	 **/
+	public static function getTweetsByTweetDate(\PDO $pdo, string $tweetDate) : \SplFixedArray {
+		// create query template
+		$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE tweetDate LIKE :tweetDate";
+		$statement = $pdo->prepare($query);
+
+		// bind the tweet date to the placeholder in the template
+		$tweetDate = "%tweetDate%";
+		$parameters = ["tweetDate" => $tweetDate];
+		$statement->execute($parameters);
+
+		// build an array of tweets
+		$tweets = new \SplFixedArray($statement->rowCount());
+		$statement->setFetchMode(\PDO::FETCH_ASSOC);
+		while(($row = $statement->fetch()) !== false) {
+			try {
+				$tweet = new Tweet($row["tweetId"], $row["tweetProfileId"], $row["tweetContent"], $row["tweetDate"]);
+				$tweets[$tweets->key()] = $tweet;
+				$tweets->next();
+			} catch(\Exception $exception) {
+				// if the row couldn't be converted, rethrow it
+				throw(new \PDOException($exception->getMessage(), 0, $exception));
+			}
+		}
+		return($tweets);
+}
