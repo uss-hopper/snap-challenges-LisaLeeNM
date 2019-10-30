@@ -5,10 +5,19 @@ ul {
 }
 
 body {
-	flex-wrap: wrap;
+	display: flex;
+
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
 
-.list-1 {
+.my-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.my-item {
 	background: tomato;
 	line-height: 150px;
 	color: white;
@@ -16,66 +25,6 @@ body {
 	font-size: 3em;
 	text-align: center;
 	margin-top: 10px;
-	border: none;
-	padding: 5px;
-}
-
-.list-2 {
-	background: tomato;
-	line-height: 150px;
-	color: white;
-	font-weight: bold;
-	font-size: 3em;
-	text-align: center;
-	margin-top: 10px;
-	border: none;
-	padding: 5px;
-}
-
-.list-3 {
-	background: tomato;
-	line-height: 150px;
-	color: white;
-	font-weight: bold;
-	font-size: 3em;
-	text-align: center;
-	margin-top: 10px;
-	border: none;
-	padding: 5px;
-}
-
-.list-4 {
-	background: tomato;
-	line-height: 150px;
-	color: white;
-	font-weight: bold;
-	font-size: 3em;
-	text-align: center;
-	margin-top: 10px;
-	border: none;
-	padding: 5px;
-}
-
-.list-5 {
-	background: tomato;
-	line-height: 150px;
-	color: white;
-	font-weight: bold;
-	font-size: 3em;
-	text-align: center;
-	margin-top: 10px;
-	border: none;
-	padding: 5px;
-}
-
-.list-6 {
-	background: tomato;
-	line-height: 150px;
-	color: white;
-	font-weight: bold;
-	font-size: 3em;
-	text-align: center;
-	margin-top: 10px;
-	border: none;
+	border: none;a
 	padding: 5px;
 }
