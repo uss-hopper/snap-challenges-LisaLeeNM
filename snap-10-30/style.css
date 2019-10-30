@@ -11,6 +11,39 @@ li {
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
+}
+
+.list-1 {
+	margin-top: 10px;
+	border: none;
+	padding: 5px;
+}
+
+.list-2 {
+	margin-top: 10px;
+	border: none;
+	padding: 5px;
+}
+
+.list-3 {
+	margin-top: 10px;
+	border: none;
+	padding: 5px;
+}
+
+.list-4 {
+	margin-top: 10px;
+	border: none;
+	padding: 5px;
+}
+
+.list-5 {
+	margin-top: 10px;
+	border: none;
+	padding: 5px;
+}
+
+.list-6 {
 	margin-top: 10px;
 	border: none;
 	padding: 5px;
