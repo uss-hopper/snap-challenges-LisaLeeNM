@@ -4,46 +4,77 @@ ul {
 	list-style: none;
 }
 
-li {
+body {
+	flex-wrap: wrap;
+}
+
+.list-1 {
 	background: tomato;
 	line-height: 150px;
 	color: white;
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
-}
-
-.list-1 {
 	margin-top: 10px;
 	border: none;
 	padding: 5px;
 }
 
 .list-2 {
+	background: tomato;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
 	margin-top: 10px;
 	border: none;
 	padding: 5px;
 }
 
 .list-3 {
+	background: tomato;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
 	margin-top: 10px;
 	border: none;
 	padding: 5px;
 }
 
 .list-4 {
+	background: tomato;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
 	margin-top: 10px;
 	border: none;
 	padding: 5px;
 }
 
 .list-5 {
+	background: tomato;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
 	margin-top: 10px;
 	border: none;
 	padding: 5px;
 }
 
 .list-6 {
+	background: tomato;
+	line-height: 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
 	margin-top: 10px;
 	border: none;
 	padding: 5px;
