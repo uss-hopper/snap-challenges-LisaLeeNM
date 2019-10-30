@@ -11,4 +11,7 @@ li {
 	font-weight: bold;
 	font-size: 3em;
 	text-align: center;
+	margin-top: 10px;
+	border: none;
+	padding: 5px;
 }
