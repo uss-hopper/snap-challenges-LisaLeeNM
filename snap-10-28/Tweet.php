@@ -43,9 +43,12 @@
 	 * @throws \PDOException when mySQL related errors occur
 	 * @throws \TypeErrorwhen a variable is not the correct data type
 	 **/
-	public static function getTweetsByTweetDate(\PDO $pdo, string $tweetDate) : \SplFixedArray {
+	public static function getTweetsByTweetDate(\PDO $pdo, DateTime $tweetDate) : \SplFixedArray {
+		// create dates for midnight of the date and midnight of the next day
+		$startDateString =
+
 		// create query template
-		$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE tweetDate LIKE :tweetDate";
+		$query = "SELECT tweetId, tweetProfileId, tweetContent, tweetDate FROM tweet WHERE tweetDate >= :startDate AND tweetDate < :endDate";
 		$statement = $pdo->prepare($query);
 
 		// bind the tweet date to the placeholder in the template

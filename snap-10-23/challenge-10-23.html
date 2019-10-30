@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Five Types of Git Flow Branches</title>
+</head>
+<body>
+<h1 class="center">How Git Flow Branches Work</h1>
+<div>
+	<h2>Master Branch</h2>
+		<p>A shell is created for the project on this master branch, but no development is done on this branch. Merges into this branch only occur after each sprint. Code that will be deployed to the server.</p>
+	<h2>Develop Branch</h2>
+		<p>One person on the team creates the develop branch. This branch is pulled from the master branch. Where we merge feature branches.</p>
+	<h2>Feature Branch</h2>
+		<p>Each member of the project team creates a specific feature branch that they are working on from the develop branch and codes and commits. Merges to the develop branch from each feature branch only occurs when that branch is ready to be tested.</p>
+	<h2>Hot Fix Branch</h2>
+		<p>This is pulled from the master branch and is only created when there's a need for an important fix to the code.</p>
+	<h2>Release Branch</h2>
+		<p>This is pulled from the master branch once all feature branches have been tested and merged to the develop branch.</p>
+</div>
+</body>
+</html>
