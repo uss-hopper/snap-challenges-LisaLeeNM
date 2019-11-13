@@ -230,11 +230,8 @@ var people = [{
 	}
 ];
 
-var reformattedPeople = people.map(function(person) {
-	delete person.company;
-	var rObj = {};
-	rObj[obj.key] = obj.value;
-	return rObj;
+var noCompany = people.map(function(person) {
+	return delete person.company;
 });
 
 console.log(people);
