@@ -1,4 +1,4 @@
-var people = [{
+const people = [{
 		"id": 1,
 		"name": "Leanne Graham",
 		"username": "Bret",
@@ -230,11 +230,15 @@ var people = [{
 	}
 ];
 
-var noCompany = people.map(function(person) {
-	return delete person.company;
-});
+const noCompany = people.map(person=>{delete person.company}
+);
 
 console.log(people);
+
+
+// const noCompany = people.map (user => delete user.company)
+// See what happens with the below
+// let companies = people.map (person => person.company)
 
 
 // people.forEach(function(person) {
