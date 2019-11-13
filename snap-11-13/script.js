@@ -1,4 +1,4 @@
-let people = [{
+var people = [{
 		"id": 1,
 		"name": "Leanne Graham",
 		"username": "Bret",
@@ -230,8 +230,13 @@ let people = [{
 	}
 ];
 
-people.forEach(function(person) {
-	delete person.company;
+var people2 = people.map(function(person) {
+return delete person.company
 });
 
-console.log(people);
+
+// people.forEach(function(person) {
+// 	delete person.company;
+// });
+//
+// console.log(people);
