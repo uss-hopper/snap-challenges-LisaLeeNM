@@ -33,6 +33,7 @@ function counts ($array){
 
 $origArray = [1,1,1,2,3,3,4,4,4,4];
 var_dump(counts($origArray));
+// var_dump(array_count_values($origArray));
 
 // In pseudocode, write a function that takes two integers. For each integer in between those two numbers (inclusive), output 'fizz' if the number is even, 'buzz' if the number is divisible by 3, and 'baz' without 'fizz' or 'buzz' if the number is divisible by both.
 // Two integers
