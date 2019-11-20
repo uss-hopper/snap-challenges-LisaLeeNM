@@ -19,8 +19,11 @@
 // Integer a = 1
 // Integer b = 10
 for(var i=1; i<11; i++) {
-	if( (i%2) === 1 ) {
+	if( (i%2) === 0 ) {
 		console.log("fizz");
-	}else if( (i%2) === )
+	}else if( (i%3) === 0) {
+		console.log("buzz");
+	}else if( (i%2) === 0 && (i%3) === 0) {
+		console.log("baz");
 	}
 }
