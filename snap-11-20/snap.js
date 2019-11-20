@@ -25,5 +25,7 @@ for(var i=1; i<11; i++) {
 		console.log("buzz");
 	}else if( (i%2) === 0 && (i%3) === 0) {
 		console.log("baz");
+	}else {
+		console.log(i);
 	}
 }
