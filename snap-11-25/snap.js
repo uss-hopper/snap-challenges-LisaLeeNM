@@ -37,3 +37,12 @@ function findMax (array of numbers) {
 
 
 // In pseudocode, write a function that computes the first 100 numbers in the Fibonacci sequence. The Fibonacci sequence is created by adding the two previous numbers in the sequence together, and starts 1, 1, 2, 3, 5, 8...
+
+function createFibonacci (int nthNumber) {
+	// use loop
+		set array [];
+	let currentNumber = 1 and now set it to previous number;
+		add to array;
+		current number = previous number + previous previous number;
+
+
