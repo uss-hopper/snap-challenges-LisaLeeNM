@@ -19,3 +19,21 @@ function removeVowels (start, end){
 
 // In pseudocode, write a function that takes an array of numbers and returns the greatest number in the array.
 
+function findMax (array of numbers)
+	start with the first number in the array and set it as max;
+	iterate through each number in the array and compare it to the max;
+	if the second number in the array is less than the max, then move on to the next number in the array;
+	if the second number in the array is greater than the max, then replace and set the second number as the max;
+	iterate through each number in the array and compare it to the max;
+
+function findMax (array of numbers) {
+	let a = max;
+		if b > a;
+			then max = b;
+		if b <= a;
+			then max = a;
+
+}
+
+
+// In pseudocode, write a function that computes the first 100 numbers in the Fibonacci sequence. The Fibonacci sequence is created by adding the two previous numbers in the sequence together, and starts 1, 1, 2, 3, 5, 8...
