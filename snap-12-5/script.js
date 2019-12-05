@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js';
+const BASE_URL = 'https://dog.ceo/dog-api/';
 
 const getDogBreeds = async () => {
 	try {
-		const res = await axios.get('${BASE_URL}/dogBreeds');
+		const res = await axios.get(`${BASE_URL}/dogBreeds`);
 
 		const dogBreeds = res.data;
 
@@ -16,4 +16,28 @@ const getDogBreeds = async () => {
 	}
 };
 
-const
+const createLi = item => {
+	const li = document.createElement('li');
+
+	li.appendChild(document.createTextNode(item.title));
+
+	return li;
+};
+
+const addDogBreedsToDOM = dogBreeds => {
+	const target = document.querySelector('target');
+
+	if (Array.isArray(dogBreeds) && dogBreeds.length > 0) {
+		dogBreeds.map(dogBreeds => {
+			target.appendChild(createLi(dogBreeds));
+		});
+	} else if (dogBreeds) {
+		target.appendChild(createLi(dogBreeds));
+	}
+};
+
+const main = async () => {
+	addDogBreedsToDOM(await getDogBreeds());
+};
+
+main();
